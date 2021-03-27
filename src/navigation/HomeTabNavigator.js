@@ -13,6 +13,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import Entypo from 'react-native-vector-icons/Entypo';
+import Octicons from 'react-native-vector-icons/Octicons';
 
 
 const Tab = createBottomTabNavigator();
@@ -28,7 +30,7 @@ const HomeTabNavigator = (props) => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <Fontisto name="search" size={25} color={color} />
+            <Fontisto name="home" size={25} color={color} />
           ),
         }}
       />
@@ -37,7 +39,7 @@ const HomeTabNavigator = (props) => {
         component={SavedScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <FontAwesome name="heart-o" size={25} color={color} />
+            <Fontisto name="favorite" size={25} color={color} />
           ),
         }}
       />
@@ -46,7 +48,7 @@ const HomeTabNavigator = (props) => {
         component={HelpScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <Feather name="message-square" size={25} color={color} />
+            <Entypo name="help" size={25} color={color} />
           ),
         }}
       />
@@ -55,7 +57,7 @@ const HomeTabNavigator = (props) => {
         component={AboutScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <EvilIcons name="user" size={25} color={color} />
+            <Octicons name="person" size={25} color={color} />
           ),
         }}
       />
