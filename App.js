@@ -1,15 +1,18 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar, } from 'react-native';
+
 import Router from './src/navigation/Router';
 
-function App(){
+const App = ()=> {
   return (
     <>
-      <StatusBar style="dark-content" />
-      <Router/>
-
+      <StatusBar barStyle="dark-content" />
+      <Router />
     </>
   );
 };
+
 export default App;
+
 
