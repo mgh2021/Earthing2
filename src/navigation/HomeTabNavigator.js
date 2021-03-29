@@ -57,7 +57,7 @@ const HomeTabNavigator = (props) => {
         component={AboutScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <Octicons name="person" size={25} color={color} />
+            <Entypo name="info-with-circle" size={25} color={color} />
           ),
         }}
       />
